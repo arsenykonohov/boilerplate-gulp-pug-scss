@@ -1,4 +1,18 @@
-# Build (A. Konohov) #
+# BOILERPLATE #
+
+
+***
+#### what inside:
+
+* PUG - preprocessor
+
+* SCSS - preprocessor (pretty SASS)
+
+* BEM (just naming)
+
+* COMPONENT flow (source structure)
+
+* browserSync
 
 
 ***
@@ -18,18 +32,6 @@ $ gulp
 $ gulp c (clean all productions)
 
 ```
-***
-#### what inside:
-
-* PUG - preprocessor
-
-* SCSS - preprocessor (pretty SASS)
-
-* BEM (just naming)
-
-* COMPONENT flow (source structure)
-
-* browserSync
 
 
 ***
