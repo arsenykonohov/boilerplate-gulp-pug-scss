@@ -1,0 +1,28 @@
+-var tabList = ["browning","colt","imi","marlin","mauser","npz","sw"];
+
+
+
+.tab
+    ul.tab__list
+        each val,index in tabList
+            li.tab__item
+                a.tab__link(href='#tab-'+val)=val
+
+
+    each val,index in tabList
+        .tab__container(id="tab-"+val)
+            h3.tab__head=val
+            .tab__body(style="background-image: url(css/img/gun-"+val+".png)")
+            .tab__foot  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse accusamus praesentium qui fuga provident, aliquam quibusdam blanditiis ipsum temporibus aut beatae cumque fugiat, dolorem ex natus vel alias quo maxime omnis delectus voluptas! Dolores!
+
+
+
+
+
+
+
+
+
+
+
+

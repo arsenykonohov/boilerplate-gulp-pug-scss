@@ -1,0 +1,29 @@
+@import "../../mixins/style.mixins";
+
+
+.toggle__parent {
+    position: relative;
+}
+.toggle {
+    text-align: center;
+    position: relative;
+    &:before {
+//        background-color: #fff; // hint ------------------------
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }
+    &.active {
+        color: #222;
+        background-color: #ffb100;
+        & + .dropdown {
+            display: block;
+        }
+    }
+}
+
+

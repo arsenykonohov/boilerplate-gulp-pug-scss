@@ -1,0 +1,58 @@
+//include ../mixins/tmp.mixins.pug
+
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        meta(name="description" content="")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        
+        link(rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png")
+        link(rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32")
+        link(rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16")
+        link(rel="manifest" href="favicon/manifest.json")
+        link(rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#333333")
+        meta(name="theme-color" content="#ffffff")
+        
+        // build:js(_source/vndr/tmp) script/modernizr.js
+        script(src="../../../bower_files/modernizr/modernizr.js")
+        // endbuild
+        
+        // build:css(_source/vndr/tmp) css/vendor.css
+        // bower:css
+        // endbower
+        // endbuild
+        
+        link(rel="stylesheet" href="css/bundle.css")
+        title
+            block title
+    body
+        .layout
+            // NAV
+            nav.layout__container.nav
+                include ./nav/tmp.nav.pug
+            // HEADER
+            header.layout__container.header
+                include ./header/tmp.header.pug
+            // MAIN CONTENT
+            block content
+            // FOOTER
+            footer.layout__container.footer
+                include ./footer/tmp.footer.pug
+        
+        // build:js(_source/vndr/tmp) script/vendor.js
+        // bower:js
+        // endbower
+        // endbuild
+        
+        script(src="script/main.min.js")
+
+
+
+
+
+
+
+
+

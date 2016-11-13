@@ -1,0 +1,38 @@
+@import "../../mixins/style.mixins";
+
+
+$header: #247BA0;
+.header__container,
+.header__head,
+.header__body,
+.header__foot {
+    background-color: rgba($header,0.1);
+    border: solid 1px $header;
+    padding: 10px;
+    margin: 10px;
+}
+// -----------------------------------
+.header {
+    background-color: darken($header, 30);
+    min-height: $headerHeight;
+    z-index: 5;
+    // nav hack
+    margin-top: -1 * $navHeight;
+    padding-top: $navHeight + 10px;
+    // footer hack
+//    margin-bottom: -1 * $footerHeight;
+//    padding-bottom: $footerHeight;
+}
+.header__container {}
+.header__head {}
+.header__body {
+    min-height: 100px;
+}
+.header__foot {}
+
+
+
+
+
+
+

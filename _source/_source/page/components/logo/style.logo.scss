@@ -1,0 +1,10 @@
+@import "../../mixins/style.mixins";
+
+
+.logo {
+    display: block;
+    display: inline-block;
+    img {
+        width: 100%;
+    }
+}

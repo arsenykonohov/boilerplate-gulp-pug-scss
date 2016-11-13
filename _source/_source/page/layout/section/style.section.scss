@@ -1,0 +1,58 @@
+@import "../../mixins/style.mixins";
+
+
+$section: #000;
+.section,
+.section__container,
+.section__head,
+.section__body,
+.section__foot,
+.section__list,
+.section__item,
+.section__link {
+    border: solid 1px $section;
+    padding: 10px;
+    margin: 10px 0px;
+    @include clearfix;
+}
+.section__container,
+.section__head,
+.section__body,
+.section__foot {
+    border: solid 3px lighten($section, 85);
+}
+.section__list,
+.section__item,
+.section__link {
+    background-color: rgba($section, 0.2);
+}
+// -------------------------
+.section {
+    border: solid 5px lighten($section, 85);
+    margin: 10px;
+    z-index: 1;
+}
+.section__container {}
+.section__head {}
+.section__body {}
+.section__foot {}
+.section__list {
+    margin: 5px 25px;
+}
+.section__item {
+    display: inline-block;
+    margin: 5px;
+}
+.section__link {
+    display: block;
+    height: 150px;
+    width: 300px;
+}
+
+
+
+
+
+
+
+

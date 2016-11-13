@@ -1,0 +1,19 @@
+-var navList = ["Home","Features","Portfolio","Rewards","Contacts"];
+
+ul.nav__list
+    each val, index in navList
+        li.nav__item.toggle__parent
+            a.nav__link.toggle(href=link)=val
+            include ../dropdown/tmp.dropdown-nav.pug
+
+
+
+
+
+
+
+
+
+
+
+

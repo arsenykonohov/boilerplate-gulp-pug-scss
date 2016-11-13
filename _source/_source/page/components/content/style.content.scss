@@ -1,0 +1,51 @@
+@import "../../mixins/style.mixins";
+
+
+$content: #533E2D;
+.content,
+.content__container,
+.content__head,
+.content__body,
+.content__foot {
+    background-color: rgba($content, 0.2);
+    border: solid 1px darken($content, 10);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+// ---------------------------
+.content {
+    border: solid 5px darken($content, 10);
+    width: 69%;
+    margin-right: 1%;
+    float: left;
+}
+.content__container {}
+.content__head {}
+.content__body {
+    min-height: 300px;
+}
+.content__foot {}
+
+// ---------------------------
+.content.middle {
+//    border-color: #0f0; // hint -------------------------
+    width: 100%;
+    margin: 10px 0;
+    .content__container {
+        margin-left: 25%; // left aside width
+        margin-right: 30%; // right aside width
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

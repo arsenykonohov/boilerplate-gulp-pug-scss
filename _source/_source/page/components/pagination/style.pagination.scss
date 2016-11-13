@@ -1,0 +1,79 @@
+@import "../../mixins/style.mixins";
+
+
+$paginationHeight: 36px;
+.pagination {
+    background-color: #fff;
+    padding: 10px;
+}
+.pagination__container {
+//    border: solid 1px #333;
+    display: inline-block;
+    position: relative;
+    padding: 0 $paginationHeight + 12px;
+}
+.pagination__list {}
+.pagination__item {
+    text-align: center;
+    display: inline-block;
+    & + .pagination__item {
+        margin-left: 10px;
+    }
+    &.left, &.right {
+        position: absolute;
+        bottom: 0;
+        .pagination__link {
+            background-color: $accent;
+            &:hover {
+                background-color: darken($accent, 10);
+            }
+        }
+    }
+    &.left {
+        left: 0;
+    }
+    &.right {
+        right: 0;
+        
+    }
+    &.disable {
+        .pagination__link {
+            cursor: default;
+            color: #888;
+            background-color: #aaa;
+        }
+    }
+    &.active {
+        .pagination__link {
+            background-color: $accent;
+            &:hover {
+                background-color: darken($accent, 10);
+            }
+        }
+    }
+}
+.pagination__link {
+//    border: solid 1px #333;
+    color: #fff;
+    display: block;
+    background-color: #555;
+    line-height: $paginationHeight;
+    height: $paginationHeight;
+    width: $paginationHeight;
+    &:hover {
+        background-color: #111;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

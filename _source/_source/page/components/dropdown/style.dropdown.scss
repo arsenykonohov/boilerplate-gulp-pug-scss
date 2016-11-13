@@ -1,0 +1,54 @@
+@import "../../mixins/style.mixins";
+
+
+.dropdown {
+    color: #222;
+    background-color: gold;
+    position: absolute;
+    display: none;
+    right: 0;
+}
+.dropdown__list {}
+.dropdown__item {
+    width: 100%;
+}
+.dropdown__link {
+    display: block;
+    white-space: nowrap;
+    padding: 10px;
+    &:hover {
+        color: gold;
+        background-color: #222;
+    }
+}
+
+// ======================================
+.asside {
+    .dropdown {
+        position: relative;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+@import "../../mixins/style.mixins";
+
+
+$form: #246EB9;
+.form,
+.form__container,
+.form__head,
+.form__body,
+.form__foot,
+.form__row,
+.form__col {
+    background-color: rgba($form, 0.1);
+    border: solid 1px $form;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.form {
+    border: solid 5px $form;
+}
+.form__row,
+.form__col {
+    color: $form;
+}
+// ----------------------------
+.form {}
+.form__container {}
+.form__head {}
+.form__body {
+    display: table;
+    width: 100%;
+}
+.form__row {
+    display: table-row;
+}
+.form__col {
+    width: 50%;
+    display: table-cell;
+    vertical-align: top;
+}
+.form__foot {}
+
+// --------------------------
+.form {
+    select,
+    textarea,
+    input[type="text"] {
+        height: 40px;
+        width: 100%;
+        border: solid 1px #333;
+        padding: 5px;
+    }
+    button {
+        width: 100%;
+        border: solid 3px darken($form,20);
+        background-color: darken($form,10);
+        padding: 15px;
+        color: #fff;
+    }
+    label {
+        cursor: pointer;
+        line-height: 30px;
+        display: block;
+    }
+    textarea {
+        resize: none;
+        height: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+@import "../../mixins/style.mixins";
+
+
+$rate: #0F4C5C;
+.rate,
+.rate__list,
+.rate__item,
+.rate__link {
+    border: solid 1px $rate;
+    background-color: rgba($rate, 0.2);
+    padding: 5px;
+    margin: 5px 0;
+}
+// ------------------------------------
+.rate {
+    border: solid 5px $rate;
+}
+.rate__list {}
+.rate__item {
+    display: inline-block;
+}
+
+//.icon-star-empty:before { content: '\e80a'; } /* '' */
+//.icon-star:before { content: '\e80b'; } /* '' */
+.rate__link {
+    $rateWidth: 40px;
+    color: invert($rate);
+    text-align: center;
+    font-size: $rateWidth - 10px;
+    // -----------------
+    position: relative;
+    height: $rateWidth;
+    width: $rateWidth;
+    display: block;
+    &:before {
+        font-family: "example";
+        content: '\e80a';
+        line-height: $rateWidth;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+    &:hover:before {content: '\e80b';}
+    &.active:before {content: '\e80b';}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

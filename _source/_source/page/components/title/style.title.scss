@@ -1,0 +1,43 @@
+@import "../../mixins/style.mixins";
+
+
+$title: #cd4a2b;
+.title,
+.title__container,
+.title__head,
+.title__body,
+.title__foot {
+    background-color: rgba($title, 0.1);
+    text-align: center;
+    display: block;
+    border: solid 1px $title;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+
+.title {
+    color: darken($title,10);
+    border: solid 5px $title;
+}
+.title__container {}
+.title__head {}
+.title__body {}
+.title__foot {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

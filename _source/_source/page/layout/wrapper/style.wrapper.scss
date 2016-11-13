@@ -1,0 +1,29 @@
+@import "../../mixins/style.mixins";
+
+
+$wrapper: #0f0;
+$amount: 0;
+.wrapper {
+    border: solid 2px lighten($wrapper,$amount);
+    min-height: 10px;
+    padding: 10px;
+    width: $breackpoint;
+    margin: 0 auto;
+    position: relative;
+    @include clearfix;
+    @media screen and (max-width: $breackpoint + 21px) {
+        width: 100%;
+        padding: 0 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

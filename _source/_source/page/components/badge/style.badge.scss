@@ -1,0 +1,58 @@
+@import "../../mixins/style.mixins";
+
+
+$badge: #21A179;
+.badge,
+.badge__list,
+.badge__item,
+.badge__container,
+.badge__head,
+.badge__body,
+.badge__foot,
+.badge__row,
+.badge__col {
+    color: darken($badge, 20);
+    border: solid 1px $badge;
+    background-color: rgba($badge, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+}
+// --------------------
+.badge {
+    border: solid 5px $badge;
+}
+// --------------------
+.badge__list {
+    @include clearfix;
+}
+.badge__item {
+    float: left;
+    width: 50%;
+}
+// --------------------
+.badge__container {}
+.badge__head {}
+.badge__body {
+    display: table;
+}
+.badge__foot {}
+// --------------------
+.badge__row {
+    display: table-row;
+}
+.badge__col {
+    display: table-cell;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+

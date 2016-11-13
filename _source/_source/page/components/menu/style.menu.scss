@@ -1,0 +1,74 @@
+@import "../../mixins/style.mixins";
+
+
+$menu: #27374A;
+.menu,
+.menu__container,
+.menu__head,
+.menu__body,
+.menu__list,
+.menu__item,
+.menu__link,
+.menu__foot {
+    color: invert($menu);
+    border: solid 1px $menu;
+    background-color: rgba($menu, 0.2);
+    padding: 10px;
+    margin-top: 5px;
+}
+// ------------------------
+.menu {
+    border: solid 5px $menu;
+}
+.menu__toggle {
+    color: #fff;
+    font-size: 40px;
+    border: solid 1px $menu;
+    background-color: $menu;
+    display: block;
+    height: 55px;
+    width: 55px;
+    *,*:before {
+        position: absolute;
+        left: -1px;
+        top: 4px;
+    }
+}
+.menu__container {}
+.menu__head {}
+.menu__body {
+    display: table;
+    width: 100%;
+}
+.menu__list {
+    display: table-row;
+}
+.menu__item {
+    display: table-cell;
+}
+.menu__link {
+    text-align: center;
+    display: block;
+    &:hover {
+        background-color: rgba($menu, 0.5);
+    }
+}
+.menu__foot {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

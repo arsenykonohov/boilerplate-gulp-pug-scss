@@ -1,0 +1,30 @@
+@import "../mixins/style.mixins";
+
+
+$page: #FF0054;
+.layout {
+    height: 100%;
+}
+.layout__container {
+    position: relative;
+    text-align: left;
+//    width: 100%;
+    @include clearfix;
+//    outline: dashed 1px $page; // hint for mixed classes
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

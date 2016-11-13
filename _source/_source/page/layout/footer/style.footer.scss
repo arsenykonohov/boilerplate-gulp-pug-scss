@@ -1,0 +1,33 @@
+@import "../../mixins/style.mixins";
+
+
+$footer: #5D536B;
+.footer__container,
+.footer__head,
+.footer__body,
+.footer__foot {
+    border: solid 1px $footer;
+    background-color: rgba($footer, .2);
+    margin: 5px;
+    padding: 5px;
+}
+// ---------------------------------
+.footer {
+    background: darken($footer, 30);
+    min-height: $footerHeight;
+    z-index: 10;
+}
+.footer__container {}
+.footer__head {}
+.footer__body {}
+.footer__foot {}
+
+
+
+
+
+
+
+
+
+

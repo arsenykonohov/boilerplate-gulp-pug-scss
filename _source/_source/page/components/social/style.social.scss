@@ -1,0 +1,48 @@
+@import "../../mixins/style.mixins";
+
+
+$socialHeight: 40px;
+$social: #9E0059;
+.social,
+.social__list,
+.social__item {
+    border: solid 1px $social;
+    background-color: rgba($social, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+}
+
+
+
+.social {
+    border: solid 5px $social;
+}
+.social__list {}
+.social__item {
+    display: inline-block;
+}
+.social__link {
+    margin: 0;
+    padding: 0;
+    color: invert($social);
+    font-size: 21px;
+    text-align: center;
+    line-height: $socialHeight;
+    background-color: $social;
+    display: block;
+    height: $socialHeight;
+    width: $socialHeight;
+    &:hover {
+        color: $social;
+        background-color: invert($social);
+    }
+}
+
+
+// ==============================
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+extends layout/tmp.layout.pug
+
+block title
+    | bem-frame
+
+block content
+    section.section.page__container
+        .wrapper
+            .section__container
+                .section__head
+                .section__body
+                    include ./components/carousel/tmp.carousel.pug
+                .section__foot
+
+    section.section.page__container
+        .wrapper
+            .section__container
+                .section__head
+                    include ./components/title/tmp.title-rate.pug
+                .section__body
+                    include ./components/tab/tmp.tab.pug
+                .section__foot
+                    h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod suscipit illum architecto sed, mollitia ducimus, at in, porro iusto dolorem quisquam delectus iure vitae nesciunt eligendi obcaecati natus eveniet. Distinctio incidunt magni quos sint!
+
+    main.main.page__container
+        .wrapper
+            .main__container
+                .main__head
+                    include ./components/breadcrumbs/tmp.breadcrumbs.pug
+                .main__body
+                    include ./components/content/tmp.content.pug
+                    include ./components/aside/tmp.aside.pug
+                .main__foot
+                    include ./components/menu/tmp.menu-horisontal.pug
+
+    main.main.page__container
+        .wrapper
+            .main__container
+                .main__head
+                    include ./components/breadcrumbs/tmp.breadcrumbs.pug
+                .main__body
+                    include ./components/content/tmp.content-middle.pug
+                    include ./components/aside/tmp.aside-left.pug
+                    include ./components/aside/tmp.aside-right.pug
+                .main__foot
+                    include ./components/menu/tmp.menu-horisontal.pug
+
+    section.section.page__container
+        .wrapper
+            .section__container
+                .section__head
+                    include ./components/title/tmp.title.pug
+                .section__body
+                    include ./components/form/tmp.form.pug
+                .section__foot
+                    include ./components/social/tmp.social.pug
+
+    section.section.page__container
+        .wrapper
+            .section__container
+                .section__head
+                    include ./components/title/tmp.title.pug
+                .section__body
+                    include ./components/badge/tmp.badge.pug
+                .section__foot
+                    include ./components/rate/tmp.rate.pug
+
+
+
+
+
+

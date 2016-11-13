@@ -1,0 +1,52 @@
+@import "../../mixins/style.mixins";
+
+
+$aside: #242331;
+.aside,
+.aside__container,
+.aside__head,
+.aside__body,
+.aside__foot {
+    color: invert($aside);
+    background-color: rgba($aside, 0.3);
+    border: solid 1px darken($aside, 10);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+// ------------------
+.aside {
+    border: solid 5px darken($aside, 10);
+    width: 30%;
+    float: left;
+}
+.aside__container {}
+.aside__head {}
+.aside__body {
+    min-height: 100px;
+}
+.aside__foot {}
+
+// ------------------
+.aside.left {
+//    border-color: #f00; // hint -------------------------
+    $width: 25%;
+    width: $width;
+    margin-left: -100%;
+}
+.aside.right {
+    $width: 30%;
+//    border-color: #00f; // hint -------------------------
+    width: $width;
+    margin-left: -1*$width;
+}
+
+
+
+
+
+
+
+
+
+

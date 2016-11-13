@@ -1,0 +1,11 @@
+menu.menu
+    a.menu__toggle.toggle(href=link)
+        i.icon.icon-menu
+    .menu__container
+        .menu__head
+        .menu__body
+            ul.menu__list
+                -for (var m=0;m<7;m++)
+                    li.menu__item
+                        a.menu__link(href=link) menu links
+        .menu__foot

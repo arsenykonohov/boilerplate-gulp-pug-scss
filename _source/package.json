@@ -1,0 +1,41 @@
+{
+  "name": "bemframe",
+  "version": "0.0.0",
+  "description": "BEM, Gulp, Pug, SCSS",
+  "author": "arsenykonohov",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://arsenykonohov@github.com/arsenykonohov/bemframe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arsenykonohov/bemframe/issues"
+  },
+  "homepage": "https://github.com/arsenykonohov/bemframe",
+  "dependencies": {
+    "gulp": "^3.8.11"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.6",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-if": "^1.2.5",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.3",
+    "gulp-uglify": "^1.2.0",
+    "gulp-useref": "^1.2.0",
+    "gulp.spritesmith": "^3.8.2",
+    "run-sequence": "^1.1.1",
+    "wiredep": "^2.2.2"
+  }
+}

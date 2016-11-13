@@ -1,0 +1,29 @@
+@import "../../mixins/style.mixins";
+
+
+$main: #00f;
+.main,
+.main__container,
+.main__head,
+.main__body,
+.main__foot {
+    border: solid 3px lighten($main, 45);
+    padding: 10px;
+    margin: 10px 0;
+    @include clearfix;
+}
+
+// -------------------------------------------
+.main {
+    border: solid 5px lighten($main, 45);
+    margin: 10px;
+}
+.main__container {}
+.main__head {}
+.main__body {}
+.main__foot {}
+
+
+
+
+

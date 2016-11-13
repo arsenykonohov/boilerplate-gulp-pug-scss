@@ -1,0 +1,71 @@
+@import "../../mixins/style.mixins";
+
+
+$nav: #CE0357;
+// --------------------
+.nav,
+.nav__container,
+.nav__head,
+.nav__body,
+.nav__foot,
+.nav__item,
+.nav__link {
+    color: invert($nav);
+    background-color: rgba($nav, 0.2);
+}
+.nav,
+.nav__container,
+.nav__head,
+.nav__body,
+.nav__item,
+.nav__link,
+.nav__foot {
+    border: solid 1px $nav;
+    padding: 5px;
+}
+.nav__head,
+.nav__body,
+.nav__item,
+.nav__foot {
+    position: relative;
+    margin: 5px 0;
+    z-index: 0;
+}
+
+// --------------------
+.nav {
+    background-color: darken($nav, 30);
+    border: solid 5px $nav;
+    min-height: $navHeight;
+    z-index: 10;
+}
+.nav__container {}
+.nav__head {}
+.nav__foot {}
+
+.nav__body {
+    display: table;
+    width: 100%;
+    z-index: 10;
+}
+.nav__list {
+    display: table-row;
+}
+.nav__item {
+    display: table-cell;
+}
+.nav__link {
+    text-align: center;
+    padding: 10px;
+    display: block;
+    &:hover {
+        color: $nav;
+        background-color: invert($nav);
+    }
+}
+
+
+
+
+
+

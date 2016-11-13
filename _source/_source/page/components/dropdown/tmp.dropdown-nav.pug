@@ -1,0 +1,10 @@
+-var navDropdownList = ["Dropdown first link","And here can be very long strings","Or not","Well, ok"]
+
+.dropdown
+    .dropdown__list
+        each val,index in navDropdownList
+            .dropdown__item
+                a.dropdown__link(href=link)=val
+
+
+

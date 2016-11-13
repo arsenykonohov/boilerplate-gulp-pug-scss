@@ -1,0 +1,20 @@
+@import "../../mixins/style.mixins";
+
+
+.article {}
+.article__container {}
+.article__head {}
+.article__body {}
+.article__foot {}
+
+.article__head,
+.article__body,
+.article__foot {
+    padding: 10px;
+}
+
+.article__container,
+.article__head,
+.article__foot {
+    background: rgba(57, 178, 0, 0.1);
+}
