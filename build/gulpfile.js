@@ -58,7 +58,7 @@ path = {
         fnt:  devPath + "/assets/fonts/*.*",
         img:  devPath + "/assets/img/*.*",
         mov:  devPath + "/assets/movie/*.*",
-        sprt: devPath + "/assets/server/*.*",
+        srv:  devPath + "/assets/server/*.*",
         sprt: devPath + "/assets/sprite/*.*",
         svg:  devPath + "/assets/svg/*.*"
     },
@@ -201,8 +201,8 @@ gulp.task("bower", function () {
             devDependencies: true
         }))
         .pipe(assets)
-        .pipe(gulpif("*.js",  uglify()))
-        .pipe(gulpif("*.css", minifyCss()))
+        //.pipe(gulpif("*.js",  uglify()))
+        //.pipe(gulpif("*.css", minifyCss()))
         .pipe(assets.restore())
         .pipe(useref())
         .pipe(gulp.dest(path.app.tmp))
